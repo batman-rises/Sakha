@@ -53,7 +53,7 @@ const MentalHealthChatbot = ({ issues }) => {
 
     // Add user message to chat
     setMessages((prev) => [...prev, { role: "user", content: userMessage }]);
-
+    //make a personalised promt like you are an ai expert accordingly ans in crisp manner...
     setIsLoading(true);
     try {
       const response = await API.post("/chatbot/generate-response", {
